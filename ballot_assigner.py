@@ -164,13 +164,13 @@ class BallotAssigner:
 
 # Example usage
 if __name__ == "__main__":
-    # Initialize the assigner
+    
     assigner = BallotAssigner(
-        ballots_csv_path="ballot_ids.csv",  # Replace with your CSV file path
-        verifiers_txt_path="verifiers.txt"  # Replace with your TXT file path
+        ballots_csv_path="ballot_ids.csv",  
+        verifiers_txt_path="verifiers.txt"  
     )
     
     assigner.run_complete_assignment(
-        ballots_to_assign=50,  # Number of ballots to assign
-        output_directory="verifier_csv_files"  # Output directory
+        ballots_to_assign=50,  
+        output_directory="verifier_csv_files"  
     )
